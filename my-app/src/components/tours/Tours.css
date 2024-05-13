@@ -1,0 +1,11 @@
+.cardImage {
+    width: 250px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.line{
+    border-width: 5px;
+    border-bottom-style: solid;
+}
