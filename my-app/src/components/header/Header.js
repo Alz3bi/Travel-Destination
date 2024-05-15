@@ -1,9 +1,10 @@
+import Navbar from "../Navbar/Navbar";
 import "./Header.css"
 
 function Header(props) {
     return (
         <>
-            <h1 class="title">Travel Destination</h1>
+            <Navbar />
         </>
     )
 }

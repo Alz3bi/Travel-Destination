@@ -1,22 +1,20 @@
 import "./Tours.css"
 import ToursData from"../../data/db.json"
+import Tour from "./tour/Tour"
 
 function Tours(props) {
     return (
-        <>
+        <div className="d-flex justify-content-lg-around flex-wrap">
         {
-            ToursData.map(Tour => {
+            ToursData.map(Element => {
                 return (
                     <>
-                    <div class="line">
-                        <p>{Tour.name}</p>
-                        <img class="cardImage" alt="tour" src={Tour.image}/>
-                    </div>
+                    <Tour tourObj={Element} />
                     </>
                 )
             })
         }
-        </>
+        </div>
     )
 }
 export default Tours
